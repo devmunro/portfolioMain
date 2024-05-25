@@ -1,12 +1,12 @@
+import { Nav } from './components/nav'
 
-import './App.css'
 
 function App() {
 
   return (
-    <>
-      
-    </>
+    <div className='w-full h-full'>
+      <Nav/>
+    </div>
   )
 }
 

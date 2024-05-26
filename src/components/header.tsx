@@ -7,7 +7,7 @@ export function Header() {
         <img className="w-1/5 self-end z-20 ml-4" src="../../public/me6.png" />
         <div className="w-1/3 self-center z-20 p-4 text-center">
           <h1 className="text-lg font-bold">I am a ...</h1>
-          <div className="text-6xl text-primary bg-clip-text bg-primary">
+          <div className="text-6xl text-primary ">
             <Typewriter
               options={{
                 strings: [

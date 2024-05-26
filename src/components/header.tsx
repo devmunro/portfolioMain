@@ -2,12 +2,25 @@ import Typewriter from "typewriter-effect";
 
 export function Header() {
   return (
-    <div>
-      <div className="flex justify-between w-full h-full relative ">
-        <img className="w-1/4 z-20 dark:hidden" src="../../public/display2.png" alt="Light Mode Display" />
-        <img className="hidden w-1/4 z-20 dark:block" src="../../public/display.png" alt="Dark Mode Display" />
-        <div className="w-1/2 self-center z-20 p-4 text-center">
-          <h1 className="text-lg font-bold dark:text-indigo-300">I am a ...</h1>
+    <div className=" flex h-full ">
+      <div className="flex justify-between w-full">
+        <div className="w-1/3 self-center">
+          <img
+            className="w-full dark:hidden"
+            src="../../public/display2.png"
+            alt="Light Mode Display"
+          />
+          <img
+            className="w-full hidden dark:block"
+            src="../../public/display.png"
+            alt="Dark Mode Display"
+          />
+        </div>
+        <div className="w-1/2 self-center text-center px-12 space-y-8">
+          <h1 className="text-2xl font-bold dark:text-indigo-300 uppercase">
+            HI! I'm David
+          </h1>
+          <h2 className="text-lg font-bold dark:text-indigo-300">I am a ...</h2>
           <div className="text-7xl text-indigo-900 dark:text-white">
             <Typewriter
               options={{
@@ -23,13 +36,17 @@ export function Header() {
             />
           </div>
         </div>
-        <img className="w-1/4 z-20 dark:hidden" src="../../public/desk2.png" />
-        <img className="w-1/4 z-20 dark:block hidden" src="../../public/desk.png" />
-
-        <div className="z-10 w-24 absolute flex animate-cloudAnimate m-0">
-          <img src="../../public/plane.svg" />
-
-          <p className="self-center border-2 border-black text-primary font-extrabold px-2">WELCOME</p>
+        <div className="lg:w-1/3  self-center">
+          <img
+            className="w-full dark:hidden hidden lg:block"
+            src="../../public/desk2.png"
+            alt="Light Mode Desk"
+          />
+          <img
+            className="w-full hidden dark:block"
+            src="../../public/desk.png"
+            alt="Dark Mode Desk"
+          />
         </div>
       </div>
     </div>

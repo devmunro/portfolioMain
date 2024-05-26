@@ -5,7 +5,7 @@ import { Nav } from './components/nav'
 function App() {
 
   return (
-    <div className='w-full h-full '>
+    <div className='dark:bg-black'>
       <Nav/>
       <Header/>
     </div>
